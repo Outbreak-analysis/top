@@ -1,4 +1,3 @@
-
 ## This is outbreak, a screens container (the top directory of Outbreak-analysis)
 
 current: target
@@ -23,17 +22,20 @@ vim_session:
 
 ## Directories
 
-## repohome
-
 corona: dir=rhdir/git_wzmli_corona
 
-## This is done automatically in makestuff; just here for hooks
-## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
+## Manual project directories
 
-## linkdirs
+resourcedirs += rabies_R0
+rabies_R0:
+	git clone https://github.com/wzmli/$@.git
 
-sample: dir=~
-sample: ; $(linkdir)
+resourcedirs += lunchbox
+lunchbox:
+	git clone https://github.com/wzmli/hybridx.git $@
+
+Ignore += $(resourcedirs)
+alldirs += $(resourcedirs)
 
 ######################################################################
 
