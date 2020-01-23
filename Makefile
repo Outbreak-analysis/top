@@ -53,3 +53,4 @@ makestuff/Makefile:
 -include makestuff/dirdir.mk
 -include makestuff/git.mk
 -include makestuff/visual.mk
+-include makestuff/repohome.mk
