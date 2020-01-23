@@ -38,19 +38,18 @@ Ignore += $(resourcedirs)
 alldirs += $(resourcedirs)
 
 ######################################################################
-
 ### Makestuff
 
 Sources += Makefile
 
 Ignore += makestuff
+msrepo = https://github.com/dushoff
 Makefile: makestuff/Makefile
-	touch $@
 makestuff/Makefile:
-	ls ../makestuff/Makefile && /bin/ln -s ../makestuff 
+	git clone $(msrepo)/makestuff
+	ls $@
 
 -include makestuff/os.mk
 -include makestuff/dirdir.mk
 -include makestuff/git.mk
 -include makestuff/visual.mk
--include makestuff/repohome.mk
