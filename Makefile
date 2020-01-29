@@ -7,7 +7,6 @@ current: target
 
 ## Screens
 
-projdirs += corona
 ## linkdirs += link
 
 screen_session: 
@@ -22,15 +21,24 @@ vim_session:
 
 ## Directories
 
+projdirs += start
+start: 
+	git clone https://github.com/Outbreak-analysis/startingPoints.git $@
+
+projdirs += corona
 corona: dir=rhdir/git_wzmli_corona
+
+projdirs += park
+park:
+	git clone https://github.com/parksw3/wuhan.git $@
 
 ## Manual project directories
 
-resourcedirs += rabies_R0
+rprojdirs += rabies_R0
 rabies_R0:
 	git clone https://github.com/wzmli/$@.git
 
-resourcedirs += lunchbox
+rprojdirs += lunchbox
 lunchbox:
 	git clone https://github.com/wzmli/hybridx.git $@
 
@@ -53,4 +61,4 @@ makestuff/Makefile:
 -include makestuff/dirdir.mk
 -include makestuff/git.mk
 -include makestuff/visual.mk
--include makestuff/repohome.mk
+## -include makestuff/repohome.mk
