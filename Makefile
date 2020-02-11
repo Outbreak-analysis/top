@@ -32,6 +32,10 @@ projdirs += park
 park:
 	git clone https://github.com/parksw3/wuhan.git $@
 
+projdirs += special
+special:
+	git clone https://github.com/Outbreak-analysis/ncov_cihr.git $@
+
 ## Manual project directories
 
 rprojdirs += rabies_R0
