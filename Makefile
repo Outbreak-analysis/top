@@ -32,7 +32,12 @@ projdirs += park
 park:
 	git clone https://github.com/parksw3/wuhan.git $@
 
-projdirs += special
+projdirs += ccall
+ccall:
+	git clone https://github.com/cfshi/coronavirus.git $@
+
+## Mike Li, sort-of-aborted forecasting thing; come back to it
+rprojdirs += special
 special:
 	git clone https://github.com/Outbreak-analysis/ncov_cihr.git $@
 
