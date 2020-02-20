@@ -36,6 +36,10 @@ projdirs += ccall
 ccall:
 	git clone https://github.com/cfshi/coronavirus.git $@
 
+projdirs += sims
+sims:
+	git clone https://github.com/dushoff/Ebola_sims.git $@
+
 ## Mike Li, sort-of-aborted forecasting thing; come back to it
 rprojdirs += special
 special:
