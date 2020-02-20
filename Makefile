@@ -1,5 +1,3 @@
-## This is outbreak, a screens container (the top directory of Outbreak-analysis)
-
 current: target
 -include target.mk
 
