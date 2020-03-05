@@ -57,6 +57,17 @@ Ignore += $(resourcedirs)
 alldirs += $(resourcedirs)
 
 ######################################################################
+
+## Resource repos
+
+datarepos/JHU:
+	$(MAKE) datarepos
+	git clone https://github.com/CSSEGISandData/COVID-19.git $@
+
+datarepos:
+	$(mkdir)
+
+######################################################################
 ### Makestuff
 
 Sources += Makefile
