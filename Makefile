@@ -38,6 +38,10 @@ projdirs += sims
 sims:
 	git clone https://github.com/dushoff/Ebola_sims.git $@
 
+projdirs += li_data
+li_data:
+	git clone https://github.com/wzmli/curate_coronadata.git $@
+
 ## Mike Li, sort-of-aborted forecasting thing; come back to it
 rprojdirs += special
 special:
