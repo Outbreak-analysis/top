@@ -34,7 +34,11 @@ projdirs += ccall
 ccall:
 	git clone https://github.com/cfshi/coronavirus.git $@
 
-projdirs += sims
+linkdirs += censor
+censor:
+	git clone https://github.com/parksw3/censor.git $@
+
+rprojdirs += sims
 sims:
 	git clone https://github.com/dushoff/Ebola_sims.git $@
 
