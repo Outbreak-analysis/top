@@ -34,11 +34,7 @@ projdirs += ccall
 ccall:
 	git clone https://github.com/cfshi/coronavirus.git $@
 
-linkdirs += censor
-censor:
-	git clone https://github.com/parksw3/censor.git $@
-
-rprojdirs += sims
+projdirs += sims
 sims:
 	git clone https://github.com/dushoff/Ebola_sims.git $@
 
@@ -72,6 +68,7 @@ datarepos/JHU:
 	$(MAKE) datarepos
 	git clone https://github.com/CSSEGISandData/COVID-19.git $@
 
+Ignore += datarepos
 datarepos:
 	$(mkdir)
 
