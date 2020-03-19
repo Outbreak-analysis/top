@@ -26,6 +26,10 @@ start:
 projdirs += corona
 corona: dir=rhdir/git_wzmli_corona
 
+rprojdirs += Canada
+Canada:
+	git clone https://github.com/wzmli/COVID19-Canada.git $@
+
 projdirs += park
 park:
 	git clone https://github.com/parksw3/wuhan.git $@
