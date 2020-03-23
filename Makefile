@@ -30,6 +30,10 @@ rprojdirs += Canada
 Canada:
 	git clone https://github.com/wzmli/COVID19-Canada.git $@
 
+rprojdirs += Korea
+Korea:
+	git clone https://github.com/parksw3/Korea-analysis.git $@
+
 projdirs += park
 park:
 	git clone https://github.com/parksw3/wuhan.git $@
