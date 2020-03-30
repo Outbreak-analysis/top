@@ -38,7 +38,11 @@ projdirs += park
 park:
 	git clone https://github.com/parksw3/wuhan.git $@
 
-projdirs += ccall
+projdirs += SACEMA
+SACEMA:
+	git clone https://github.com/SACEMA/covidProjections.git $@
+
+rprojdirs += ccall
 ccall:
 	git clone https://github.com/cfshi/coronavirus.git $@
 
@@ -49,6 +53,14 @@ sims:
 projdirs += li_data
 li_data:
 	git clone https://github.com/wzmli/curate_coronadata.git $@
+
+projdirs += state
+state:
+	git clone https://github.com/bbolker/NYScovid19.git $@
+
+linkdirs += fcst
+fcst:
+	git clone https://github.com/davidchampredon/covid-fcst.git $@
 
 ## Mike Li, sort-of-aborted forecasting thing; come back to it
 rprojdirs += special
