@@ -54,10 +54,6 @@ projdirs += li_data
 li_data:
 	git clone https://github.com/wzmli/curate_coronadata.git $@
 
-projdirs += state
-state:
-	git clone https://github.com/bbolker/NYScovid19.git $@
-
 linkdirs += fcst
 fcst:
 	git clone https://github.com/davidchampredon/covid-fcst.git $@
