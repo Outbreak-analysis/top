@@ -24,8 +24,7 @@ start:
 	git clone https://github.com/Outbreak-analysis/startingPoints.git $@
 
 ## This now lives in 6:3
-rprojdirs += corona
-corona: dir=rhdir/git_wzmli_corona
+## rprojdirs += corona
 
 rprojdirs += Canada
 Canada:
