@@ -26,10 +26,6 @@ start:
 ## This now lives in 6:3
 ## rprojdirs += corona
 
-rprojdirs += Canada
-Canada:
-	git clone https://github.com/wzmli/COVID19-Canada.git $@
-
 rprojdirs += Korea
 Korea:
 	git clone https://github.com/parksw3/Korea-analysis.git $@
